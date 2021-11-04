@@ -1,32 +1,10 @@
-<!DOCTYPE html>
+<?php
 
-<html>
-  <head>
-    <title>Resto</title>
-    <link href="style.css" type="text/css" rel="stylesheet" />
-  </head>
+get_header();
+?>
 
-  <body>
-    <header>
-      <div class="wrapper">
-        <h1 class="logo">Resto</h1>
-        <nav>
-          <h2>Main Navigation</h2>
-          <ul>
-            <li><a href="">Our Story</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Reservations</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Reviews</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Start homepage content -->
-
-    <div id="main-banner">
-      <img src="images/banner.jpg" alt="Welcome to Resto" />
+<div id="main-banner">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/banner.jpg" alt="Welcome to Resto" />
     </div>
 
     <div class="wrapper">
@@ -79,25 +57,25 @@
       <section id="featured">
         <ul>
           <li>
-            <img src="images/thumb-1.jpg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-1.jpg" />
             <a href="">Fugiat nulla sint</a>
             <span>$30</span>
             <span class="rating"></span>
           </li>
           <li>
-            <img src="images/thumb-1.jpg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-1.jpg" />
             <a href="">Fugiat nulla sint</a>
             <span>$30</span>
             <span class="rating"></span>
           </li>
           <li>
-            <img src="images/thumb-1.jpg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-1.jpg" />
             <a href="">Fugiat nulla sint</a>
             <span>$30</span>
             <span class="rating"></span>
           </li>
           <li>
-            <img src="images/thumb-1.jpg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-1.jpg" />
             <a href="">Fugiat nulla sint</a>
             <span>$30</span>
             <span class="rating"></span>
@@ -105,33 +83,9 @@
         </ul>
       </section>
     </div>
-    <!-- End homepage content -->
 
-    <footer>
-      <div class="wrapper">
-        <ul>
-          <li>New York Restaurant</li>
-          <li>3926 Anmoore Road</li>
-          <li>New York, NY 10014</li>
-          <li>718-749-1714</li>
-        </ul>
-        <ul>
-          <li>France Restaurant</li>
-          <li>68, rue da le Couronne</li>
-          <li>75002 PARIS</li>
-          <li>02.94.23.69.56</li>
-        </ul>
-        <ul>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Careers</a></li>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        <ul>
-          <li><img src="images/white-logo.png" alt="logo" /></li>
-          <li>&copy; All rights reserved 2021</li>
-        </ul>
-      </div>
-    </footer>
-  </body>
-</html>
+    
+
+<?php
+// get_sidebar();
+get_footer();
